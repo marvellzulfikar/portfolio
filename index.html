@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Portfolio</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&family=Poppins&display=swap');
+
+        html, body {
+        overflow-x: hidden;
+        }
+
+        .navbar {
+          padding: 1em 0;
+        }
+
+        .navbar-nav {
+          margin-left: auto;
+          gap: 1rem;
+        }
+
+        .nav-item {
+          text-align: center;
+        }
+
+        .logo {
+          text-decoration: none;
+          color : black;
+          font-weight: 700;
+          font-size: large;
+        }
+
+        #hero {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          margin-top: 20px;
+          font-family: 'Libre Franklin', sans-serif;
+
+        }
+
+        .pre-title {
+          text-transform: uppercase;
+          letter-spacing: 0.3rem;
+          font-size: 0.7rem;
+        }
+
+        .hero-name {
+          font-weight: 700;
+        }
+
+        .hero-pic {
+          width: 80%;
+        }
+
+        #about-me {
+          margin: 7rem 0;
+          padding: 4rem 0;
+          background-color: #f5f5f5;
+        }
+
+        .about-title {
+          text-align: center;
+          padding-bottom: 30px;
+        }
+
+        .p-description {
+          text-align: center;
+        }
+
+        #projects {
+          margin: 7rem 0;
+          padding: 4rem 0;
+        }
+
+        .project-head {
+          text-align: center;
+          padding-bottom: 30px;
+        }
+
+        .all-cards {
+          display: flex;
+          justify-content: center;
+          gap: 100px;
+        }
+
+        .card {
+          text-align: center;
+          width: 500px;
+          height: 200px;
+        }
+
+        @media (max-width: 720px){
+          #hero {
+            margin-top: 10px;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .hero-pic {
+            width: 100%;
+          }
+
+          .hero-left {
+            margin-left: 10px;
+          }
+
+          .all-cards {
+            margin: 1rem 0;
+            display:flex;
+            flex-direction: column;
+            margin-top: -30px;
+            row-gap: 30px;
+            align-items: center;
+          }
+
+          .card {
+            width: 90%;      
+          }
+
+        }
+
+    </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container">
+    
+      <a class="logo" href="#">MZ</a>
+
+      <button class="navbar-toggler" id="menuItems" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Skills</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- hero section -->
+  <div class="container">
+    <section id="hero">
+
+      <div class="hero-left">
+        <h3 class="pre-title">Hi, my name is</h3>
+        <h1 class="hero-name">Muhammad Marvell Zulfikar</h1>
+        <p class="hero-desc">Fresh with associate's degree in system information</p>
+      </div>
+
+      <div class="hero-right">
+        <img class="hero-pic" src="img/Marvellz.png" alt="">
+      </div>
+    </section>
+  </div>
+
+
+  <!-- About me section -->
+  <section id="about-me">
+    <div class="container">
+
+      <h3 class="about-title">About Me</h3>
+      <p class="p-description">Recent IT graduate with associate’s degree in Computer Science at Sriwijaya University and a passion for technology and innovation. As a recent IT graduate, I am excited to embark on my career in the technology industry. I have a solid foundation in web programming and system analysis, gained through my academic coursework and hands-on projects. I am passionate about staying up-to-date with the latest advancements in IT and looking for an opportunity to apply my technical knowledge to real-world challenges.</p>
+
+    </div>
+
+
+  </section>
+
+
+  <!-- projects section -->
+  <section id="projects">
+    <div class="container">
+
+      <h3 class="project-head">Projects</h3>
+
+      <div class="all-cards">
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-title">Project 1</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p> description </p>
+            
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-title">Project 2</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+           
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-title">Project 3</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+           
+          </div>
+        </div>
+
+      </div>
+     
+
+    </div>
+  </section>
+  
+
+
+    
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+</body>
+</html>
